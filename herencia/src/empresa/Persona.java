@@ -1,6 +1,6 @@
 package empresa;
 
-public class Persona {
+public abstract class Persona {    //clase no instanciable, no se pueden crear objetos SE PONE ABSTRACT
 
 	protected String dni;
 	protected String nombre;

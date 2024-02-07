@@ -7,6 +7,12 @@ public class Empleado extends Staff{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public String toString() {
+		return "Empleado [sueldo=" + sueldo + ", dni=" + dni + ", nombre=" + nombre + ", telefono=" + telefono + "]";
+	}
 	
+
+
 
 }
