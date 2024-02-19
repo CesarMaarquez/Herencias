@@ -23,13 +23,14 @@ public class Prueba {
 		System.out.println(lista);
 		
 		System.out.println("Precio total de la lista: "+ precioTotal(lista));
+		System.out.println("Cuantos de gasolina: "+cuantosdeGasolina(lista));
 
 	}
 	
 	public static int precioTotal(ArrayList<Vehiculo> lista) {
 		int total=0;
 		for (Vehiculo vehiculo : lista) {
-			total+=vehiculo.precio;
+			total+=vehiculo.getPrecio();
 		}
 		return total;
 	}
@@ -37,10 +38,15 @@ public class Prueba {
 	public static int cuantosdeGasolina(ArrayList<Vehiculo> lista) {
 		int total=0;
 		for (Vehiculo vehiculo : lista) {
-			if (vehiculo.getCombustible().equals("Gasolina")) {
-				total++;
+			
+			if (vehiculo instanceof VehiculosConMotor) {   //si es un vehiculo con motor le pregunto si usa gasolina
+				if (((VehiculosConMotor) vehiculo).getCombustible().equals("Gasolina")) {
+					total++;
+				}
 			}
+			
 		}
+		return total;
 	}
 
 }
