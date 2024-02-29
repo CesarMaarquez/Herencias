@@ -14,6 +14,9 @@ public class Prueba {
 
 		Crucero crucero=new Crucero("1", "Islas Griegas", "LibertyOfSeas", LocalDate.parse("2024-12-24"), LocalDate.parse("2024-12-24"));
 		
+		crucero.add(f);
+		crucero.add(o);
+		
 		System.out.println(crucero);
 	}
 

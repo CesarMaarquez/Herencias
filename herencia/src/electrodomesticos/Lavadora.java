@@ -15,6 +15,8 @@ public class Lavadora extends Electrodomestico{
 		super(precioBase, color, consumoEnergetico, peso);
 		this.carga=carga;
 	}
+	
+	
 
 	public Lavadora(float precioBase, int peso) {
 		super(precioBase, peso);
@@ -27,7 +29,7 @@ public class Lavadora extends Electrodomestico{
 
 	@Override
 	public float precioFinal() {
-		if (this.carga>30) {
+		if (this.carga<30) {
 			return super.precioFinal();
 		}
 		else {

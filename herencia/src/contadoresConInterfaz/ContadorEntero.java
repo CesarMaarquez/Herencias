@@ -15,7 +15,7 @@ public class ContadorEntero implements Contador{
 
 	public void setValor(int valor) {
 		this.valor = valor;
-	}
+	}v
 
 	@Override
 	public String toString() {
